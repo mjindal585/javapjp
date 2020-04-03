@@ -1,0 +1,5 @@
+javac -cp . com\mile1\bean\*.java
+javac -cp . com\mile1\exception\*.java
+javac -cp . com\mile1\service\*.java
+javac -cp . com\mile1\main\*.java
+java -cp . com.mile1.main.StudentMain
