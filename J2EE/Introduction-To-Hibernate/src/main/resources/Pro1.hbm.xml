@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration 
+PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" 
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="bean.Pro1" table="employee_table">
+<id name="id" column="employee_id" type="int" >
+<generator class="assigned"></generator>
+</id>
+<property name="name" column="employee_name" type="string" not-null="true"></property>
+<property name="sal" column="employee_salary" type="double" not-null="true"></property>
+</class>
+</hibernate-mapping>

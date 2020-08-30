@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-configuration>
+<session-factory>
+    
+      <property name = "hibernate.dialect">
+         org.hibernate.dialect.MySQL5Dialect
+      </property>
+      
+      <property name = "hibernate.connection.driver_class">
+         com.mysql.jdbc.Driver
+      </property>
+      
+      <!-- Assume test is the database name -->
+      
+      <property name = "hibernate.connection.url">
+         jdbc:mysql://localhost:3306/user?useSSL=false
+      </property>
+      
+      <property name = "hibernate.connection.username">
+         root
+      </property>
+      
+      <property name = "hibernate.connection.password">
+         root
+      </property>
+    <!-- To echo / show all executed queries on server output -->
+    <property name="hibernate.show_sql">true</property>
+    <!-- Used to Create or Alter Table  -->
+    <!-- Given class structure not present in the database persist / save - insert
+    update - update
+    delete - delete 
+    get / load - select record by ID (primary key) 
+      -->
+ <property name="hibernate.hbm2ddl.auto">update</property>    
+
+    <property name="hibernate.enable_lazy_load_no_trans">true</property>
+    <mapping resource="HQL1.hbm.xml"/> 
+    <mapping resource="HQL2.hbm.xml"/> 	
+    <mapping resource="HQL3.hbm.xml"/>
+    <mapping resource="HQL4.hbm.xml"/>
+    <mapping resource="HQL5.hbm.xml"/>
+    <mapping resource="HQL6.hbm.xml"/> 
+
+</session-factory>
+</hibernate-configuration>

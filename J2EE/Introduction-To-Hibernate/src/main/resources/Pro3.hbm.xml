@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-mapping>
+<class name="bean.Pro3" table="empl">
+<id name="id" column="id" type="int" >
+<generator class="native"></generator>
+</id>
+<property name="name" column="name" type="string" ></property>
+<property name="desg" column="desg" type="string" ></property>
+<property name="sal" column="sal" type="java.lang.Double" ></property>
+</class>
+</hibernate-mapping>

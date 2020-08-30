@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping>
+<class name="com.wipro.bean.Employee" table="EMPLOYEE">
+<id name="id" column="ID">
+<generator class="native"/>
+</id>
+
+<property name="Name" column="Name" type="string" not-null="true"/>
+<property name="Gender" column="Gender" type="string" not-null="true"/>
+<property name="City" column="City" type="string" not-null="true"/>
+<property name="Designation" column="Designation" type="string" not-null="true"/>
+<property name="Email" column="Email" type="string" not-null="true"/>
+<property name="Salary" column="Salary" type="double" not-null="true"/>
+<property name="Phone" column="Phone" type="long" not-null="true"/>
+
+</class>
+</hibernate-mapping>

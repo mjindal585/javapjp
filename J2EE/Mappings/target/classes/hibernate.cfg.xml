@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-configuration>
+<session-factory>
+    <!-- Oracle Dialect -->
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+    <!-- Database Connection Settings -->
+    
+
+      
+      <property name = "hibernate.connection.driver_class">
+         com.mysql.jdbc.Driver
+      </property>
+      
+      <!-- Assume test is the database name -->
+      
+      <property name = "hibernate.connection.url">
+         jdbc:mysql://localhost:3306/user?useSSL=false
+      </property>
+      
+      <property name = "hibernate.connection.username">
+         root
+      </property>
+      
+      <property name = "hibernate.connection.password">
+         root
+      </property>
+
+
+    <property name="hibernate.show_sql">true</property>
+    <!-- Used to Create or Alter Table  -->
+    <!-- Given class structure not present in the database persist / save - insert
+    update - update
+    delete - delete 
+    get / load - select record by ID (primary key) -->
+       <property name="hibernate.hbm2ddl.auto">create</property>     
+
+    <property name="hibernate.enable_lazy_load_no_trans">true</property>
+    
+    <mapping resource="Mappings.hbm.xml"/>
+    <mapping class="bean.Mappings3"/>
+    <mapping class="bean.Countries"/>
+         <mapping class="bean.Mappings2"/>
+    <mapping class="bean.MultiCarOwner"/>
+        <mapping class="bean.Mappings4"/>
+    <mapping class="bean.Passport"/>  
+         <mapping class="bean.Mappings5"/>
+    <mapping class="bean.Address"/>
+ 
+</session-factory>
+</hibernate-configuration>

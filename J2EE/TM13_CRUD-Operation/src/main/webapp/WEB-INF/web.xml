@@ -1,0 +1,67 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app >
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>AddEmployee</servlet-name>
+  	<display-name>AddEmployee</display-name>
+  	<description></description>
+  	<servlet-class>com.wipro.servlet.AddEmployee</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DeleteEmployee</servlet-name>
+  	<display-name>DeleteEmployee</display-name>
+  	<description></description>
+  	<servlet-class>com.wipro.servlet.DeleteEmployee</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DisplayEmployee</servlet-name>
+  	<display-name>DisplayEmployee</display-name>
+  	<description></description>
+  	<servlet-class>com.wipro.servlet.DisplayEmployee</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DisplayEmployeeByID</servlet-name>
+  	<display-name>DisplayEmployeeByID</display-name>
+  	<description></description>
+  	<servlet-class>com.wipro.servlet.DisplayEmployeeByID</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ModifyEmployee</servlet-name>
+  	<display-name>ModifyEmployee</display-name>
+  	<description></description>
+  	<servlet-class>com.wipro.servlet.ModifyEmployee</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ModifyEmp</servlet-name>
+  	<display-name>ModifyEmp</display-name>
+  	<description></description>
+  	<servlet-class>com.wipro.servlet.ModifyEmp</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AddEmployee</servlet-name>
+  	<url-pattern>/AddEmployee</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeleteEmployee</servlet-name>
+  	<url-pattern>/DeleteEmployee</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DisplayEmployee</servlet-name>
+  	<url-pattern>/DisplayEmployee</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DisplayEmployeeByID</servlet-name>
+  	<url-pattern>/DisplayEmployeeByID</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ModifyEmployee</servlet-name>
+  	<url-pattern>/ModifyEmployee</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ModifyEmp</servlet-name>
+  	<url-pattern>/ModifyEmp</url-pattern>
+  </servlet-mapping>
+</web-app>
